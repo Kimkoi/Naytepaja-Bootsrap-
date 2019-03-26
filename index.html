@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Näytepaja</title>
+
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/galleria.css" rel="stylesheet">
+	<link href="css/3dcarousel.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqtoiminnot.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
+	<script type="text/javascript" src="js/galleria.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/3dcarousel.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body background="galleria/background-forest.jpg">
+  
+   <nav class="navbar navbar-default">
+    <div class="navbar-header">
+		
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#minimenu-toggle-nav" aria-expanded="false">
+		
+		<span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+			
+        </button>
+		<a class="navbar-brand" href="index.html">Kimmon näytepaja</a>
+		
+    </div>
+		
+			<div class="collapse navbar-collapse" id="minimenu-toggle-nav">
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html">Portfolio</a></li>
+			<li><a href="cv.html">CV</a></li>
+			
+			</ul>
+			</div>
+			
+		
+   </nav><!-- nav collapse-->
+   
+ <div id="firstDiv">  
+ <img src="video/tehdas.jpg" id="videosubstitute" alt="tehdas">  
+<video autoplay muted loop id="bgVideo">
+  <source src="video/tehdas.mp4" type="video/mp4">
+</video>
+
+
+<div id="topHeading">Tervetuloa sivuilleni!</div>
+  
+<div id="topText">
+ 
+  Tein nämä sivut demopaikaksi johon koostaa sekalaisia
+  hengentuotteita sitä myöten kun saan niitä tehtyä. 
+
+  </div>
+  
+ 
+</div><!--firstDiv-->
+
+ <div class="content">
+
+
+<h2>Kuvagalleria</h2>
+
+
+<div class="row">
+
+
+Tämä kuvagalleria on toteutettu Javascriptillä.<br><br>
+<br>
+<!--kuvat-->
+<div id="kuva1" >
+<img src="galleria/greatocean.jpg" width="600" height="450"  id="greatocean" alt="Great Ocean Road" onclick="modeliin('greatocean')"/><br><br>
+Great Ocean Road
+</div>
+
+<div id="kuva2"  >
+<img src="galleria/Italiaranta.jpg" width="600" height="450" id="Italiaranta" alt="Italiaranta" onclick="modeliin('Italiaranta')"/><br><br>
+Italian rantaa
+</div>
+
+<div id="kuva3" >
+<img src="galleria/Italiarinne.jpg" width="600" height="450" id="Italiarinne" alt="Italiarinne" onclick="modeliin('Italiarinne')"/><br><br>
+San Marinon rinne
+</div>
+
+<div id="kuva4" >
+<img src="galleria/Itavaltapuisto.jpg" width="600" height="450" id="Itavaltapuisto" alt="Itavaltapuisto" onclick="modeliin('Itavaltapuisto')"/><br><br>
+Linnan puisto Itävallassa
+</div>
+
+<div id="kuva5" >
+<img src="galleria/Maltamaisema.jpg" width="600" height="450" id="Maltamaisema" alt="Maltamaisema" onclick="modeliin('Maltamaisema')"/><br><br>
+Maltan satamamaisema
+</div>
+
+<div id="kuva6" >
+<img src="galleria/Ruisrock.jpg" width="600" height="450" id="Ruisrock" alt="Ruisrock" onclick="modeliin('Ruisrock')"/><br><br>
+Ruisrock
+</div>
+
+<div id="kuva7" >
+<img src="galleria/saaristoa.jpg" width="600" height="450" id="saaristoa" alt="saaristoa" onclick="modeliin('saaristoa')"/><br><br>
+Suomen saaristoa
+</div>
+
+<div id="kuva8" >
+<img src="galleria/Suomenlinna.jpg" width="600" height="450" id="Suomenlinna" alt="Suomenlinna" onclick="modeliin('Suomenlinna')"/><br><br>
+Suomenlinna
+</div>
+
+<div id="kuva9" >
+<img src="galleria/vuori.jpg" width="600" height="450" id="vuori" alt="vuori" onclick="modeliin('vuori')"/><br><br>
+Itävallannan maisemaa
+</div>
+
+<div id="kuva10" >
+<img src="galleria/Yllasrinne.jpg" width="600" height="450" id="Yllasrinne" alt="Yllasrinne" onclick="modeliin('Yllasrinne')"/><br><br>
+Ylläksen rinne
+</div>
+
+<div id="kuva11" >
+<img src="galleria/thaimaa.jpg" width="600" height="450" id="thaimaa" alt="thaimaa" onclick="modeliin('thaimaa')"/><br><br>
+Koh Lanta, Thaimaa
+</div>
+
+<div id="kuva12" >
+<img src="galleria/hongkong.jpg" width="600" height="450" id="hongkong" alt="hongkong" onclick="modeliin('hongkong')"/><br><br>
+Hongkong
+</div>
+
+ <!-- Ponnahdusmodali -->
+<div id="myModal" class="modal">
+  
+  <span class="close">&times;</span>
+
+  
+  <img class="modal-content" id="imgInModal">
+  
+</div><!-- Ponnahdusmodali -->
+
+</div><!--row-->
+<div class="row">
+
+<div id="prev" alt="edellinen" onclick="Edellinen();">&#9668;</div> 
+<div id="next" alt="seuraava" onclick="Seuraava();">&#9658;</div>  
+
+</div><!--row-->
+<br><br>
+<!--thumbnailsit-->
+
+<div class="gallery">
+<div class="row">
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('0')"><img src="galleria/greatocean.jpg" id="0" class="EiValittu" width="120" height="90" alt="Great Ocean Road.jpg" class="fade-in"></a> 
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('1')"><img src="galleria/Italiaranta.jpg" id="1" class="EiValittu" width="120" height="90" alt="Italiaranta"  class="fade-in"></a>
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('2')"><img src="galleria/Italiarinne.jpg" id="2" class="EiValittu" width="120" height="90"  alt="Italiarinne"></a>
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('3')"><img src="galleria/Itavaltapuisto.jpg" id="3" class="EiValittu" width="120" height="90" alt="Itavaltapuisto"></a>
+  </div>
+ </div>
+ <br><br>
+ <div class="row">
+  <div class="col-sm-3">
+   <a href="javascript:Vaihda('4')"><img src="galleria/Maltamaisema.jpg" id="4" class="EiValittu" width="120" height="90" alt="Maltamaisema"></a>
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('5')"><img src="galleria/Ruisrock.jpg" id="5" class="EiValittu" width="120" height="90" alt="Ruisrock"></a>
+  </div>
+  <div class="col-sm-3">
+   <a href="javascript:Vaihda('6')"><img src="galleria/saaristoa.jpg" id="6" class="EiValittu" width="120" height="90" alt="saaristoa"></a>
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('7')"><img src="galleria/Suomenlinna.jpg" id="7" class="EiValittu" width="120" height="90" alt="Suomenlinna"></a>
+  </div>
+</div>
+
+<br><br>
+<div class="row">
+  <div class="col-sm-3">
+   <a href="javascript:Vaihda('8')"><img src="galleria/vuori.jpg" id="8" class="EiValittu" width="120" height="90" alt="vuori"></a>
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('9')"><img src="galleria/Yllasrinne.jpg" id="9" class="EiValittu" width="120" height="90" alt="Yllasrinne"></a>
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('10')"><img src="galleria/thaimaa.jpg" id="10" class="EiValittu" width="120" height="90" alt="thaimaa"></a>
+  </div>
+  <div class="col-sm-3">
+  <a href="javascript:Vaihda('11')"><img src="galleria/hongkong.jpg" id="11" class="EiValittu" width="120" height="90" alt="hongkong"></a>
+  </div>
+</div>
+ </div>
+
+
+ </div><!--content-->
+ <br><br>
+ <hr>
+ 
+ <br>
+ 
+<div class="hideme"> 
+ 
+<div class="content"> 
+
+<h2>Piirroksia</h2>
+
+ 
+<div class="row">
+
+Tässä joitakin piirroksia joita olen piirtänyt, 
+värittänyt kuvankäsittelyohjelmalla ja lisännyt kuvia
+taustoiksi.
+
+<br><br><br><br>
+   <div class="carousel_container">
+  <div class="carousel">
+    <div class="item a"><img src="piirrokset/kala.jpg" id="kala" class="clickpic" alt="kala" onclick="modeliin('kala')"></div>
+    <div class="item b"><img src="piirrokset/ritari.jpg" id="ritari" class="clickpic" alt="miniritari" onclick="modeliin('ritari')"></div>
+    <div class="item c"><img src="piirrokset/hiphoptyyppi.jpg" id="hoppari" class="clickpic" alt="hoppari" onclick="modeliin('hoppari')"></div>
+    <div class="item d"><img src="piirrokset/pöllö.jpg" id="pöllö" class="clickpic" alt="tyylikäs pöllö" onclick="modeliin('pöllö')"></div>
+    <div class="item e"><img src="piirrokset/habajoulu.jpg" id="habajoulu" class="clickpic" alt="bodarin joulu" onclick="modeliin('habajoulu')"></div>
+    <div class="item f"><img src="piirrokset/spaceballs.jpg" id="spaceballs" class="clickpic" alt="spaceballs" onclick="modeliin('spaceballs')"></div>
+  </div>
+</div>
+
+<div class="prev" alt="edellinen">&#8249;</div> 
+<div class="next"alt="seuraava">&#8250;</div>
+  
+   
+ </div> 
+
+
+
+  <!-- Ponnahdusmodali -->
+<div id="myModal" class="modal">
+  
+  <span class="close">&times;</span>
+
+  
+  <img class="modal-content" id="imgInModal">
+  
+</div><!-- Ponnahdusmodali -->
+ 
+ 
+  </div> <!--hideme-->
+ 
+ </div>
+ 
+ 
+ <br><br>
+ <hr>
+ <br>
+ 
+<div class="hideme"> 
+
+<div class="content">
+
+<h2>Videot</h2>
+
+
+ 
+<div class="row">
+
+Tässä videoita joita olen editoinut Premiere Prolla, lisännyt efektejä After Effectsillä ja pääosin kuvannut itse.
+
+
+<br><br>
+
+   <div class="col-sm-4 text-center" >
+	 
+	 <a href="bulgaria.html"><img src="galleria/bulgaria.jpg" class="videokuva" alt="bulgaria"></a>
+	 
+	
+	</div>
+   
+   <div class="col-sm-4 text-center" >
+	 
+	 <a href="tekstianimaatio.html"><img src="galleria/sites.jpg" class="videokuva" alt="tekstianimaatio"></a>
+	
+   </div>
+	
+   
+   <div class="col-sm-4 text-center" >
+	 
+	 <a href="dik.video.html"><img src="galleria/videok.jpg" class="videokuva" alt="videonkäsittely"></a>
+	
+   </div>
+   
+   </div>
+</div><!--row-->
+</div><!--content-->
+   
+   
+ </div> <!--hideme--> 
+ 
+ <br><br>
+ <hr>
+ <br>
+ 
+<div class="hideme2">
+
+<div class="content">
+
+<h2>Digitaalisen äänenkäsittelyn perusteet</h2>
+
+
+<br>
+
+
+
+
+Alla aikoinaan opinnoissa tehty äänenkäseittelyn harjoitustyö. eri tehtävänantoineen. Harjoitustyössä oli neljä osaa jotka ovat
+kuultavissa alapuolella. Tehtävänannot eivät ole viralliset alkuperäiset mutta niitä on mukailtu niin hyvin kuin ne muistuivat mieleen.
+
+<br><br>
+<div id="pic">
+<a href="galleria/megafone.png"/><img src="galleria/megafone.png" width="250" height="250" border="0" alt="megafone"/></a><br><br>
+
+</div>
+
+<br>
+<b>1. Koeta saada ääninäytteestä järkevän kuuloinen eri tekniikoita yhdistelemällä.</b><br>
+<br>
+
+
+Ensin nostin desibelejä 65 prosenttia efektien Amplify/Fade toiminnolla.
+Sitten otin hieman kohinaa 5.stä sanasta ja sen näytteeksi Capture noice reduction profile- toiminnolla. Tämän jälkeen poistin häiriöääntä Voice reduction:issa, jolloin äänestä tuli melko selkeä. <br>
+
+Sanoja kuunnellessa huomasin, että osa oli käännetty, joten käytin Reverse-efektiä sanoihin 2,3,5 ja 7. Vaihdoin vielä 2sen ja 3sen paikkaa, jolloin lause alkoi olla järkevä.
+Tiivistin välit manuaalisesti.<br><br>
+
+<audio controls>
+ <source src="aanet/Osa 1.wav" type="audio/wav">
+  <source src="aanet/Osa 1.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio> <br><br>
+
+
+
+Tulokseksi tuli: Ihminen syttyy ja sammuu kuin valo yössä.<br>
+</div><!--content-->
+</div><!--hideme2-->
+<div class="hideme3">
+
+<div class="content">
+
+<br><br>
+<b>2. Etsi jokin huonokuntoinen äänitallenne. Poimi siitä 10–30 sekuntia pitkä ääninäyte. Koeta vaimentaa sitä häiritsevä taustakohina ja muut epäpuhtaudet. Raportoi käyttämistäsi operaatioista ja palauta ratkaisuna alkuperäinen ja puhdistamasi ääninäyte.</b><br>
+
+<br>
+Korjataan Monty Pythonin vanhaa papukaijavitsiä, jonka äänitteessä kuuluu taustasuhinaa ja ääni särkee. <br>
+Valitsin kohdan jossa ei kuulunut puhetta eikä liioin yleisön naurua jolloin saatiin näyte taustan suhinasta Capture noice reduction profile- toiminnolla. Tämän jälkeen valitsin efekteistä Noise reductionin jonka säädin 85%:iin.Vaihdoin näkymän aalloista spektriin ja poistin ylhäältä 25 prosenttia koko äänialueesta, jossa oli vain liilana esiintyvää puheen taustasuhinaa. Tämä selvitti vielä hieman äänitettä.
+<br><br>
+alkuperäinen ääninäyte: 
+<br><br>
+<audio controls id="originaali">
+ <source src="aanet/parrot-sketch.wav" type="audio/wav">
+ <source src="aanet/parrot-sketch.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+<br>
+<br>
+muokattu ääninäyte: 
+<br><br>
+<audio controls id="muokattu">
+ <source src="aanet/Osa 2.wav" type="audio/wav">
+  <source src="aanet/Osa 2.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<br><br>
+
+
+<!--<img src="galleria/play-sininen.jpg" id="play" onclick="Soita();" onmouseover=this.style.cursor='pointer' width="50" height="50" border="0" alt="Play"/><br><br>
+ nappikuvaan sekä play että vaihto, koordinaatit tunnistaa kumpaa painetaan-->
+
+<br>
+<b>3. Generoi 4–10 sekuntia pitkä puhdas synteettinen aaltomuoto (sini-, kolmio, saha- tai kanttiaalto). Elävöitä sitä eri äänenkäsittelyoperaatioilla 
+(käytä vähintään kolmea eri operaatiota). Raportoi käyttämistäsi operaatioista.</b><br>
+
+<br>
+Tein puhtaan siniaallon Generate tones-toiminnolla, jossa valitsin Flavor characteristics-arvoksi 1.0.
+
+Käytin elävöittämiseen Delay effects:in Flanger efekteistä Aural:ia mutta säädin sitä niin että originaalin äänen osuus oli 60%. Lisäsin myös pari 
+kokonuottia efektien Special-osiosta.
+Korkeamman nuotin ajan keskelle lisäsin Choruksen lentävä lautanen-efektin ilman Vibrato depthiä.<br>
+
+Loppuun alemman nuotin ajaksi lisäsin vielä häivytyksen Favorites-valikosta. 
+<br><br>
+<audio controls>
+ <source src="aanet/Osa 3.wav" type="audio/wav">
+  <source src="aanet/Osa 3.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+<br><br>
+<b>4. Laadi 20–60 sekuntia pitkä äänikollaasi (esim. kuunnelma, musiikkipotpuri tai kokeellinen ääniteos). Käytä kollaasin lähtökohtana vähintään viittä eri
+ äänitiedostoa. Vaihtele ääniä, miksaa niitä yhteen ja sovella niihin kurssilla esiteltyjä operaatioita — käytä mielikuvitustasi! Raportoi käyttämistäsi
+ operaatioista ja palauta tuloksena saamasi äänitiedosto.</b><br>
+
+<br>
+Ääninäytteen pohjana toimii rummuilla tehty biitti joka on alkuperäiseltä kestoltaan n. 8 sekuntia. Se on yhtäjaksoinen lukuunottamatta loppua, johon tulee
+ erilainen tahti. Monistin tämän näytteen yhtäjaksoisen osan moneen kertaan perinteisellä copy ja paste-toiminnolla, ja lisäsin loppuun alkuperäisessä 
+ esiintyneen lopputahdin. Tähän tahtiin lisäsin vielä efekteistä Pink-echon. <br><br>
+
+Seuraavaksi lisäsin (Multitrack view:issä) taustalle kitaran ääntä. Pidensin alkuperäistä 2 sekunnin ääntä samalla periaatteella kuin taustaäänenkin kohdalla.
+<br><br>
+
+Kitaran ääni sopi temmoltansa rumpuihin niin hyvin ettei äänen pituutta tarvinnut muuttaa Time Strech:illä.
+
+Lisäsin toisen kitaran äänen näiden kahden taustaäänen päälle jonka sain taas pidentämällä olemassa olevaa 4 sekunnin näytettä. Tämän näytteen keskivaiheille 
+lisäsin kolmeen kohtaan efekteistä Strech:in Lower pitch:in joka toi äänen mukavasti vaihtelua. Keskimmäiseen näistä lisäsin vielä efektin Bounce delay joka 
+toi ääneen viive-efektin. Loppuun miksasin vielä kolmannen kitarasoinnun tämän toisen kanssa lomittain joka päättää tämän kitaraäänen. Myös taustakitara 
+lopettaa samaan aikaa jättäen soimaan taustarummut. <br>
+<br>
+Lopussa vielä ennen rumpujen kaiulla vahvistettua lopputahtia Simpsoneiden Homer huudahtaa iloisesti.<br><br>
+<audio controls>
+ <source src="aanet/Osa 4.wav" type="audio/wav">
+  <source src="aanet/Osa 4.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+<br><br>
+
+</div><!--content-->
+
+</div><!--hideme3-->
+ <br><br>
+ 
+
+ <div class="navbar-footer navbar-fixed-bottom" role="navigation" >
+   <div class="container">
+   <table style="width:100%">
+    <tr>
+	<th class="navbar-text pull left">
+		<p>Esittelysivu</p>
+	</th>
+	<th>
+	<span class="links" style="float:right;">
+	<a href="index.html">Portfolio</a>
+	<a href="cv.html">CV</a>
+   </span>
+   </div>
+  </div>
+    
+  </body>
+</html>
