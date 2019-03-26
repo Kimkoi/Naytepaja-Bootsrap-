@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Koulun sivu</title>
+<link rel="stylesheet" type="text/css" href="../tyyli.css" /> 
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../jqtoiminnot.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" />
+<script type="text/javascript">
+
+
+var i=0;
+var j;
+var KuvaNyt;
+var vaaraKuva;
+var kuvat = new Array();
+kuvat[0] = "kuva1";
+kuvat[1] = "kuva2";
+kuvat[2] = "kuva3";
+kuvat[3] = "kuva4";
+kuvat[4] = "kuva5";
+kuvat[5] = "kuva6";
+kuvat[6] = "kuva7";
+kuvat[7] = "kuva8";
+kuvat[8] = "kuva9";
+kuvat[9] = "kuva10";
+
+//A variable that can hold all the other object references other than the object which is going to be visible
+function Seuraava()
+{
+//Siirtää kuvataulukon indeksiä eteenpäin ja näyttää  vastaavan id:n kuvan
+if (i<kuvat.length-1)
+{i++;}
+else
+{i=0;}
+KuvaNyt = document.getElementById(kuvat[i]);
+KuvaNyt.style.display = "block";
+document.getElementById(i).className="Valittu";
+//ne joiden id ei oo sama olioon asetetun id:n kanssa piilotetaan.
+for(j=0;j<kuvat.length;j++)
+{
+if(i!=j)
+	{vaaraKuva = document.getElementById(kuvat[j]);
+	vaaraKuva.style.display = "none";
+	document.getElementById(j).className="EiValittu";
+	}
+}
+
+}
+
+function Edellinen()
+{
+//Siirtää kuvataulukon indeksiä eteenpäin ja näyttää  vastaavan id:n kuvan
+if (i>0)
+{i--;}
+else
+{i=kuvat.length-1;}
+KuvaNyt = document.getElementById(kuvat[i]);
+KuvaNyt.style.display = "block";
+document.getElementById(i).className="Valittu";
+//ne joiden id ei oo sama olioon asetetun id:n kanssa piilotetaan.
+for(j=0;j<kuvat.length;j++)
+{
+if(i!=j)
+	{vaaraKuva = document.getElementById(kuvat[j]);
+	vaaraKuva.style.display = "none";
+	document.getElementById(j).className="EiValittu";
+	}
+}
+}
+//tällä kontrolloidaan thumnailssien painamista
+function Vaihda(pass){
+
+  i=pass;
+  KuvaNyt = document.getElementById(kuvat[i]);
+  KuvaNyt.style.display = "block";
+  document.getElementById(i).className="Valittu";
+  
+  /*ne joiden id ei oo sama piilotetaan. Koska thumnailsseja on sama määrä kuin 
+   kuva-id:itä Kuvat-listassa, voidaan käyttää samaa for-luuppia kumpiinkin kuviin*/
+for(j=0;j<kuvat.length;j++)
+{
+if(i!=j)
+	{vaaraKuva = document.getElementById(kuvat[j]);
+	vaaraKuva.style.display = "none";
+	document.getElementById(j).className="EiValittu";
+	}
+}
+
+
+}
+
+
+
+</script>
+</head>
+<body>
+<div id="kotelo">
+
+<div class="linkkipalkki" >
+<br>
+
+<ul>
+<li>
+<a href="../index.html">Pääsivu</a>
+</li>
+<li>
+<a href="../Koulutyot.html">Koulutöitä</a>
+</li>
+<li>
+<a href="../cv.html">CV</a>
+</li>
+<li>
+<a href="../galleria/Galleria.html">Galleria</a>
+</li>
+<li>
+<a href="../linkit.html">Linkit</a>
+</li>
+</ul>
+
+</div>
+<div class="ylapalkki">
+<h2 align="center">Kuvagalleria</h2>
+</div>
+
+<div class="sisalto">
+<br>
+<center>
+
+<br>
+Tässä on harjoiteltu tekemään kuvagalleriaa Javascriptillä<br><br>
+
+<!--kuvat-->
+<div id="kuva1">
+<a href="greatocean.jpg"/><img src="greatocean.jpg" width="500" height="350" border="0" alt="Hankoranta"/></a><br><br>
+Great Ocean Road
+</div>
+
+<div id="kuva2" style="display:none">
+<a href= "Italiaranta.jpg"/><img src="Italiaranta.jpg" width="500" height="350" border="0" alt="Italiaranta"/></a><br><br>
+Italian rantaa
+</div>
+
+<div id="kuva3" style="display:none">
+<a href="Italiarinne.jpg"/><img src="Italiarinne.jpg" width="500" height="350" border="0" alt="Italiarinne"/></a><br><br>
+San Marinon rinne
+</div>
+
+<div id="kuva4" style="display:none">
+<a href="Itavaltapuisto.jpg"/><img src="Itavaltapuisto.jpg" width="500" height="350" border="0" alt="Itavaltapuisto"/></a><br><br>
+Linnan puisto Itävallassa
+</div>
+
+<div id="kuva5" style="display:none">
+<a href="Maltamaisema.jpg"/><img src="Maltamaisema.jpg" width="500" height="350" border="0" alt="Maltamaisema"/></a><br><br>
+Maltan satamamaisema
+</div>
+
+<div id="kuva6" style="display:none">
+<a href="Ruisrock 09.jpg"/><img src="Ruisrock 09.jpg" width="500" height="350" border="0" alt="Ruisrock 09"/></a><br><br>
+Ruisrock 09
+</div>
+
+<div id="kuva7" style="display:none">
+<a href="saaristoa.jpg"/><img src="saaristoa.jpg" width="500" height="350" border="0" alt="saaristoa"/></a><br><br>
+Suomen saaristoa
+</div>
+
+<div id="kuva8" style="display:none">
+<a href="Suomenlinna.jpg"/><img src="Suomenlinna.jpg" width="500" height="350" border="0" alt="Suomenlinna"/></a><br><br>
+Suomenlinna
+</div>
+
+<div id="kuva9" style="display:none">
+<a href="vuori.jpg"/><img src="vuori.jpg" width="500" height="350" border="0" alt="vuori"/></a><br><br>
+Itävallannan maisemaa
+</div>
+
+<div id="kuva10" style="display:none">
+<a href="Yllasrinne.jpg"/><img src="Yllasrinne.jpg" width="500" height="350" border="0" alt="Yllasrinne"/></a><br><br>
+Ylläksen rinne
+</div>
+
+<br><br>
+<img src="arrow left.jpg" id="prev" width="50" height="50" alt="edellinen" onmouseover=this.style.cursor='pointer' onclick="Edellinen();">
+<img src="arrow right.jpg" id="next" width="50" height="50" alt="seuraava" onmouseover=this.style.cursor='pointer' onclick="Seuraava();">
+
+
+<!--thumbnailsit-->
+<table border="0" cellspacing="10">
+<tr>
+<td><a href="javascript:Vaihda('0')"><img src="greatocean.jpg" id="0" class="EiValittu" width="80" height="60" alt="Great Ocean Road"></a> </td>
+<td><a href="javascript:Vaihda('1')"><img src="Italiaranta.jpg" id="1" class="EiValittu" width="80" height="60" alt="Italiaranta"></a> </td>
+<td><a href="javascript:Vaihda('2')"><img src="Italiarinne.jpg" id="2" class="EiValittu" width="80" height="60" alt="Italiarinne"></a> </td>
+<td><a href="javascript:Vaihda('3')"><img src="Itavaltapuisto.jpg" id="3" class="EiValittu" width="80" height="60" alt="Itavaltapuisto"></a> </td>
+<td><a href="javascript:Vaihda('4')"><img src="Maltamaisema.jpg" id="4" class="EiValittu" width="80" height="60" alt="Maltamaisema"></a> </td>
+</tr>
+<tr>
+<td><a href="javascript:Vaihda('5')"><img src="Ruisrock 09.jpg" id="5" class="EiValittu" width="80" height="60" alt="Ruisrock 09"></a> </td>
+<td><a href="javascript:Vaihda('6')"><img src="saaristoa.jpg" id="6" class="EiValittu" width="80" height="60" alt="saaristoa"></a> </td>
+<td><a href="javascript:Vaihda('7')"><img src="Suomenlinna.jpg" id="7" class="EiValittu" width="80" height="60" alt="Suomenlinna"></a> </td>
+<td><a href="javascript:Vaihda('8')"><img src="vuori.jpg" id="8" class="EiValittu" width="80" height="60" alt="vuori"></a> </td>
+<td><a href="javascript:Vaihda('9')"><img src="Yllasrinne.jpg" id="9" class="EiValittu" width="80" height="60" alt="Yllasrinne"></a> </td>
+</table>
+
+</center> 
+</div>
+<br><br>
+</div>
+</body>
+
+</html>

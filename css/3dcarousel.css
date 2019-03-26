@@ -1,0 +1,110 @@
+
+.carousel_container {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 95%;
+  height: 95%;
+  line-height: 60%;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius:10px;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px);
+  
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px);
+  
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  
+} 
+.f {
+  transform: rotateY(300deg) translateZ(250px);
+  
+}
+
+ @media only screen and (max-width :600px) {
+
+.carousel_container {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  perspective: 500px;
+}
+
+
+
+.a {
+  transform: rotateY(0deg) translateZ(125px);
+
+}
+.b {
+  transform: rotateY(60deg) translateZ(125px);
+  
+}
+.c {
+  transform: rotateY(120deg) translateZ(125px);
+  
+}
+.d {
+  transform: rotateY(180deg) translateZ(125px);
+  
+}
+.e {
+  transform: rotateY(240deg) translateZ(125px);
+  
+} 
+.f {
+  transform: rotateY(300deg) translateZ(125px);
+  
+}
+
+}
+
+.next, .prev {
+display: inline-block;
+font-size:150px;
+color: #444;
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+  transform:translateY(6px);
+}
+
+.next { right: 5em; }
+.prev { left: 5em; }

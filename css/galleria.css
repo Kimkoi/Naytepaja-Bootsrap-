@@ -1,0 +1,72 @@
+#kuva2, #kuva3, #kuva4, #kuva5, #kuva6, #kuva7,
+#kuva8, #kuva9, #kuva10, #kuva11, #kuva12{
+	
+display:none;	
+}
+
+#prev, #next{
+display: inline-block;
+font-size: 120px; 	
+color:#666666;	
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+}
+
+#next:hover, #prev:hover {
+	
+cursor:pointer;
+color: #404040; 
+}
+#next:active, #prev:active {
+	
+transform:translateY(6px); 
+}
+
+.Valittu{
+border:4px solid #666666;
+margin-top:0px;
+margin-bottom:0px;
+}
+
+.EiValittu{
+border:2px solid #8a8a8a;
+margin-top:1px;
+margin-bottom:1px;
+}
+
+.EiValittu:hover{
+border:4px solid #ffffff;	
+margin-top:0px;
+margin-bottom:0px;
+}
+.EiValittu:active {
+transform:translateY(3px); 
+
+}
+#0, #1, #2, #3, #4, #5,
+#6, #7, #8, #9, #10, #11{
+	
+
+}
+
+	
+#nolla{opacity:0;}	
+	
+/* gallerian kuva näkyviin*/
+.show {
+  visibility: hidden;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+ 
+}
+
+/*fade-in animaaiot*/
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
