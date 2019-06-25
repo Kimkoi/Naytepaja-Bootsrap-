@@ -2,6 +2,10 @@ body{
 font-size:18px;
 background-attachment: fixed;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 
 }
 
@@ -20,13 +24,36 @@ border:transparent;
 background-color:#222222;
 margin-left: auto;
 margin-right: auto; 
-color: #8a8a8a;
+color: #595959;
 }
 
+
+
+a{
+color: #595959;	
+text-decoration: none; 
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;	
+}
+
+a:hover{
+cursor:pointer;
+text-decoration: none; 
+color: #404040;
+}
+
+a:active{
+	
+transform:translateY(6px); 
+}
+
+
+
 #firstDiv{
-min-height: 650px;
+min-height: 500px;
 width:auto;	
 }
+
 
 
 #topText, #topHeading{
@@ -34,48 +61,164 @@ color:#f2f2f2;
 font-size: 40px;
 text-shadow: 2px 2px black;
 max-width: 1000px;
+display: block;
 margin-left: auto;
 margin-right: auto; 
 text-align: center;
+position: relative;
 padding-top: 30px;
 background-color:transparent;
 transition-duration: 0.4s;
 }
 
 #topHeading{
-font-size: 55px;	
+font-size: 55px;		
+}
+
+#topText{
+padding-top: 70px;
 	
 }
 
-
-#bgVideo {
+#bgPic,#bgPic2{
 position: absolute;
-top:0;
-width:100%;
+top:60px;
+max-width:100%;
 perspective:1000;
 left:0;
-width:auto;
-z-index:-100;
-	
+z-index:-100;	
 }
-#videosubstitute{display:none;width:100%;height:auto;z-index:-100;}
 
- @media only screen and (max-width :600px) {
+#bgPic {
+display: block;
+}
 
-#bgVideo{display:none;}
-#videosubstitute{display:block;}
-#firstDiv{min-height: 350px;}
+
+#bgPic2 {
+display: none;	
+}
+
+
+
+
+@media only screen and (max-width :1000px) {
+	 
+
+#firstDiv{min-height: 300px;}
+
 #topText, #topHeading{
-color:#8a8a8a;
+font-size: 28px;
+text-shadow: 1px 1px black;
+padding-top: 20px;
+max-width: 500px;
+}
+
+
+#topHeading{
+font-size: 38px;
+
+}
+	 
+ } 
+
+@media only screen and (max-width :650px) {
+
+#firstDiv{min-height: 200px;}
+
+
+#topText, #topHeading{
 font-size: 20px;
 text-shadow: 1px 1px black;
 max-width: 500px;
-
 }
+
 #topHeading{
 font-size: 27px;
 }
 
+}
+
+@media only screen and (max-width :500px) {
+	
+#firstDiv{min-height: 350px;}	
+
+#bgPic {
+display: none;
+}
+
+#bgPic2 {
+display: block;
+}
+
+
+
+#topText, #topHeading{
+top: 50px;
+font-size: 20px;
+text-shadow: 1px 1px black;
+max-width: 500px;
+}
+
+#topHeading{
+font-size: 27px;
+}
+
+}
+
+@media only screen and (max-width :350px) {
+
+#firstDiv{min-height: 175px;}
+
+#bgPic2{top: 50px;}
+
+#topText, #topHeading{
+top: -25px;
+font-size: 15px;
+text-shadow: 1px 1px black;
+
+}
+
+#topHeading{
+font-size: 20px;
+}
+
+}
+
+.NaviLink{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom:100px;
+width:120px;
+height:120px;	
+}
+
+.NaviLink:hover{
+color:#000000;	
+}	
+
+.NaviLink:active{
+	
+transform:translateY(6px); 
+}
+
+#up{
+display: inline-block;
+font-size: 30px; 	
+color:#666666;	
+float:right;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+}
+
+#up:hover {
+	
+cursor:pointer;
+color: #404040; 
+}
+#up:active{
+	
+transform:translateY(6px); 
 }
  
  hr { 
@@ -101,12 +244,10 @@ padding-left:60px;
 	
 }
 
-a{	
-color: 	#8A8A8A;
-}
+
 
 .links{/*linkkien tyyli alavalikos*/
-	
+ color: #595959;
   display: inline-block;
   margin: 0 auto;
   padding: 0;
@@ -115,7 +256,7 @@ color: 	#8A8A8A;
 }
 .links, a:hover {
     text-decoration: none;
-	color:#ffffff;
+	color:#000000;
 }
 
 .button {
@@ -167,7 +308,8 @@ font-family:"Trebuchet MS", Helvetica, sans-serif;
 
 
 .videokuva{
-
+width:400px;
+height:300px;
 margin:10px;	
 }
 
@@ -223,7 +365,7 @@ background-color:transparent;
     display: none; 
     position: fixed; 
     z-index: 1; 
-    padding-top: 100px; 
+    padding-top: 50px; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -269,9 +411,10 @@ background-color:transparent;
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 35px;
+    padding-top: 3px;
     height: 0;
     overflow: hidden;
+	border: none;
 }
 
 .video-container iframe {
@@ -282,6 +425,7 @@ background-color:transparent;
     width: 70%;
     height: 70%;
 }
+
 
 #omakuva{
 height:200px;
@@ -296,32 +440,15 @@ display: block;
 .center{
 display: block;
 margin-left: auto;
-margin-right: auto; }
+margin-right: auto;
+}
 
-.right{
-	
-margin-left: 130px;	
+.VertCenter{
+display: block;
+margin-top: 25px;
+margin-bottom: auto;		
 }
 
 
 
-
-.fade-in {
-  
-  animation: fadeIn 2s;
-}
-  @keyframes fadeIn {
-	  
-	  
-  from {
-	  
-	opacity: 0;
-	  
-  }
-  
-  
-  to {
-    opacity: 1;
-  }
-}
 
