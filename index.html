@@ -57,27 +57,56 @@
 		
    </nav><!-- nav collapse-->
    
- <div id="firstDiv">  
- <img src="video/tehdas.jpg" id="videosubstitute" alt="tehdas">  
-<video autoplay muted loop id="bgVideo">
-  <source src="video/tehdas.mp4" type="video/mp4">
-</video>
+ <div id="firstDiv"> 
+<div id="top"> 
+<img src="galleria/tehdas.jpg" id="bgPic" alt="tehdas">  
+<img src="galleria/tehdas-kapea.jpg" id="bgPic2" alt="tehdas">
+
 
 
 <div id="topHeading">Tervetuloa sivuilleni!</div>
   
 <div id="topText">
- 
   Tein nämä sivut demopaikaksi johon koostaa sekalaisia
-  hengentuotteita sitä myöten kun saan niitä tehtyä. 
+  hengentuotteita sitä myöten kun saan niitä tehtyä.
+ 
+  </div>
+ </div>
 
+</div><!--firstDiv--> 
+  <br>
+  
+  <div class="content" >
+  <h2>Alempaa löydät seuraavaa:</h2>
+  <br>
+  
+  <div class="row">
+
+  <div class="col-xs-12 col-sm-6 col-md-3">
+  <a href="#kuvagalleria" class="NaviLink"><img src="piirrokset/pics-js.png" width="90" height="120" alt="kuvagalleria"><br>Kuvagalleria(JS)</a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3">
+  <a href="#piirroskaruselli" class="NaviLink"><img src="piirrokset/drawings-jq.png" width="90" height="120" alt="piirroskaruselli"><br>Piirroskaruselli<br>(jQuery)</a> 
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3">
+  <a href="#videoita" class="NaviLink"><img src="piirrokset/pics and video.png" width="90" height="120" alt="kuvaa ja videoita"><br>Kuvan ja Videon<br>käsittelyä</a>
+  </div> 
+<div class="col-xs-12 col-sm-6 col-md-3">
+  <a href="#audio" class="NaviLink"><img src="piirrokset/audio.png" width="90" height="120" alt="audio"><br>Audiota</a>
+  </div>    
   </div>
   
+ </div>
  
-</div><!--firstDiv-->
+  
+
+
+
 
  <div class="content">
 
+
+<div id="kuvagalleria">
 
 <h2>Kuvagalleria</h2>
 
@@ -89,62 +118,62 @@ Tämä kuvagalleria on toteutettu Javascriptillä.<br><br>
 <br>
 <!--kuvat-->
 <div id="kuva1" >
-<img src="galleria/greatocean.jpg" width="600" height="450"  id="greatocean" alt="Great Ocean Road" onclick="modeliin('greatocean')"/><br><br>
+<img src="galleria/greatocean.jpg" width="600" height="450"  id="greatocean" alt="Great Ocean Road" onclick="modaliin('greatocean')"/><br><br>
 Great Ocean Road
 </div>
 
 <div id="kuva2"  >
-<img src="galleria/Italiaranta.jpg" width="600" height="450" id="Italiaranta" alt="Italiaranta" onclick="modeliin('Italiaranta')"/><br><br>
+<img src="galleria/Italiaranta.jpg" width="600" height="450" id="Italiaranta" alt="Italiaranta" onclick="modaliin('Italiaranta')"/><br><br>
 Italian rantaa
 </div>
 
 <div id="kuva3" >
-<img src="galleria/Italiarinne.jpg" width="600" height="450" id="Italiarinne" alt="Italiarinne" onclick="modeliin('Italiarinne')"/><br><br>
+<img src="galleria/Italiarinne.jpg" width="600" height="450" id="Italiarinne" alt="Italiarinne" onclick="modaliin('Italiarinne')"/><br><br>
 San Marinon rinne
 </div>
 
 <div id="kuva4" >
-<img src="galleria/Itavaltapuisto.jpg" width="600" height="450" id="Itavaltapuisto" alt="Itavaltapuisto" onclick="modeliin('Itavaltapuisto')"/><br><br>
+<img src="galleria/Itavaltapuisto.jpg" width="600" height="450" id="Itavaltapuisto" alt="Itavaltapuisto" onclick="modaliin('Itavaltapuisto')"/><br><br>
 Linnan puisto Itävallassa
 </div>
 
 <div id="kuva5" >
-<img src="galleria/Maltamaisema.jpg" width="600" height="450" id="Maltamaisema" alt="Maltamaisema" onclick="modeliin('Maltamaisema')"/><br><br>
+<img src="galleria/Maltamaisema.jpg" width="600" height="450" id="Maltamaisema" alt="Maltamaisema" onclick="modaliin('Maltamaisema')"/><br><br>
 Maltan satamamaisema
 </div>
 
 <div id="kuva6" >
-<img src="galleria/Ruisrock.jpg" width="600" height="450" id="Ruisrock" alt="Ruisrock" onclick="modeliin('Ruisrock')"/><br><br>
+<img src="galleria/Ruisrock.jpg" width="600" height="450" id="Ruisrock" alt="Ruisrock" onclick="modaliin('Ruisrock')"/><br><br>
 Ruisrock
 </div>
 
 <div id="kuva7" >
-<img src="galleria/saaristoa.jpg" width="600" height="450" id="saaristoa" alt="saaristoa" onclick="modeliin('saaristoa')"/><br><br>
+<img src="galleria/saaristoa.jpg" width="600" height="450" id="saaristoa" alt="saaristoa" onclick="modaliin('saaristoa')"/><br><br>
 Suomen saaristoa
 </div>
 
 <div id="kuva8" >
-<img src="galleria/Suomenlinna.jpg" width="600" height="450" id="Suomenlinna" alt="Suomenlinna" onclick="modeliin('Suomenlinna')"/><br><br>
+<img src="galleria/Suomenlinna.jpg" width="600" height="450" id="Suomenlinna" alt="Suomenlinna" onclick="modaliin('Suomenlinna')"/><br><br>
 Suomenlinna
 </div>
 
 <div id="kuva9" >
-<img src="galleria/vuori.jpg" width="600" height="450" id="vuori" alt="vuori" onclick="modeliin('vuori')"/><br><br>
+<img src="galleria/vuori.jpg" width="600" height="450" id="vuori" alt="vuori" onclick="modaliin('vuori')"/><br><br>
 Itävallannan maisemaa
 </div>
 
 <div id="kuva10" >
-<img src="galleria/Yllasrinne.jpg" width="600" height="450" id="Yllasrinne" alt="Yllasrinne" onclick="modeliin('Yllasrinne')"/><br><br>
+<img src="galleria/Yllasrinne.jpg" width="600" height="450" id="Yllasrinne" alt="Yllasrinne" onclick="modaliin('Yllasrinne')"/><br><br>
 Ylläksen rinne
 </div>
 
 <div id="kuva11" >
-<img src="galleria/thaimaa.jpg" width="600" height="450" id="thaimaa" alt="thaimaa" onclick="modeliin('thaimaa')"/><br><br>
+<img src="galleria/thaimaa.jpg" width="600" height="450" id="thaimaa" alt="thaimaa" onclick="modaliin('thaimaa')"/><br><br>
 Koh Lanta, Thaimaa
 </div>
 
 <div id="kuva12" >
-<img src="galleria/hongkong.jpg" width="600" height="450" id="hongkong" alt="hongkong" onclick="modeliin('hongkong')"/><br><br>
+<img src="galleria/hongkong.jpg" width="600" height="450" id="hongkong" alt="hongkong" onclick="modaliin('hongkong')"/><br><br>
 Hongkong
 </div>
 
@@ -159,6 +188,8 @@ Hongkong
 </div><!-- Ponnahdusmodali -->
 
 </div><!--row-->
+
+</div><!--kuvagalleria-->
 <div class="row">
 
 <div id="prev" alt="edellinen" onclick="Edellinen();">&#9668;</div> 
@@ -170,62 +201,60 @@ Hongkong
 
 <div class="gallery">
 <div class="row">
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('0')"><img src="galleria/greatocean.jpg" id="0" class="EiValittu" width="120" height="90" alt="Great Ocean Road.jpg" class="fade-in"></a> 
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('1')"><img src="galleria/Italiaranta.jpg" id="1" class="EiValittu" width="120" height="90" alt="Italiaranta"  class="fade-in"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('2')"><img src="galleria/Italiarinne.jpg" id="2" class="EiValittu" width="120" height="90"  alt="Italiarinne"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('3')"><img src="galleria/Itavaltapuisto.jpg" id="3" class="EiValittu" width="120" height="90" alt="Itavaltapuisto"></a>
   </div>
  </div>
- <br><br>
+ 
  <div class="row">
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
    <a href="javascript:Vaihda('4')"><img src="galleria/Maltamaisema.jpg" id="4" class="EiValittu" width="120" height="90" alt="Maltamaisema"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('5')"><img src="galleria/Ruisrock.jpg" id="5" class="EiValittu" width="120" height="90" alt="Ruisrock"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
    <a href="javascript:Vaihda('6')"><img src="galleria/saaristoa.jpg" id="6" class="EiValittu" width="120" height="90" alt="saaristoa"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('7')"><img src="galleria/Suomenlinna.jpg" id="7" class="EiValittu" width="120" height="90" alt="Suomenlinna"></a>
   </div>
 </div>
 
-<br><br>
 <div class="row">
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
    <a href="javascript:Vaihda('8')"><img src="galleria/vuori.jpg" id="8" class="EiValittu" width="120" height="90" alt="vuori"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('9')"><img src="galleria/Yllasrinne.jpg" id="9" class="EiValittu" width="120" height="90" alt="Yllasrinne"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('10')"><img src="galleria/thaimaa.jpg" id="10" class="EiValittu" width="120" height="90" alt="thaimaa"></a>
   </div>
-  <div class="col-sm-3">
+  <div class="col-xs-12 col-sm-6 col-md-3">
   <a href="javascript:Vaihda('11')"><img src="galleria/hongkong.jpg" id="11" class="EiValittu" width="120" height="90" alt="hongkong"></a>
   </div>
 </div>
  </div>
-
-
- </div><!--content-->
- <br><br>
- <hr>
  
- <br>
+ <a href="#top" id="up" alt="alkuun">&#9650;</a>
+ <br> 
+ </div><!--content-->
+ 
+ <hr>
  
 <div class="hideme"> 
  
-<div class="content"> 
+<div class="content" id="piirroskaruselli"> 
 
 <h2>Piirroksia</h2>
 
@@ -239,18 +268,21 @@ taustoiksi.
 <br><br><br><br>
    <div class="carousel_container">
   <div class="carousel">
-    <div class="item a"><img src="piirrokset/kala.jpg" id="kala" class="clickpic" alt="kala" onclick="modeliin('kala')"></div>
-    <div class="item b"><img src="piirrokset/ritari.jpg" id="ritari" class="clickpic" alt="miniritari" onclick="modeliin('ritari')"></div>
-    <div class="item c"><img src="piirrokset/hiphoptyyppi.jpg" id="hoppari" class="clickpic" alt="hoppari" onclick="modeliin('hoppari')"></div>
-    <div class="item d"><img src="piirrokset/pöllö.jpg" id="pöllö" class="clickpic" alt="tyylikäs pöllö" onclick="modeliin('pöllö')"></div>
-    <div class="item e"><img src="piirrokset/habajoulu.jpg" id="habajoulu" class="clickpic" alt="bodarin joulu" onclick="modeliin('habajoulu')"></div>
-    <div class="item f"><img src="piirrokset/spaceballs.jpg" id="spaceballs" class="clickpic" alt="spaceballs" onclick="modeliin('spaceballs')"></div>
+    <div class="item a"><img src="piirrokset/kala.jpg" id="kala" class="clickpic" alt="kala" onclick="modaliin('kala')"></div>
+    <div class="item b"><img src="piirrokset/ritari.jpg" id="ritari" class="clickpic" alt="miniritari" onclick="modaliin('ritari')"></div>
+    <div class="item c"><img src="piirrokset/hiphoptyyppi.jpg" id="hoppari" class="clickpic" alt="hoppari" onclick="modaliin('hoppari')"></div>
+    <div class="item d"><img src="piirrokset/pöllö.jpg" id="pöllö" class="clickpic" alt="tyylikäs pöllö" onclick="modaliin('pöllö')"></div>
+    <div class="item e"><img src="piirrokset/habajoulu.jpg" id="habajoulu" class="clickpic" alt="bodarin joulu" onclick="modaliin('habajoulu')"></div>
+    <div class="item f"><img src="piirrokset/spaceballs.jpg" id="spaceballs" class="clickpic" alt="spaceballs" onclick="modaliin('spaceballs')"></div>
   </div>
 </div>
 
-<div class="prev" alt="edellinen">&#8249;</div> 
-<div class="next"alt="seuraava">&#8250;</div>
-  
+<div class="prev" alt="edellinen">&#9668;</div> 
+<div class="next"alt="seuraava">&#9658;</div>
+
+<br>
+ <a href="#top" id="up" alt="alkuun">&#9650;</a>
+ <br>
    
  </div> 
 
@@ -267,18 +299,17 @@ taustoiksi.
 </div><!-- Ponnahdusmodali -->
  
  
-  </div> <!--hideme-->
+  </div> 
  
- </div>
+ </div><!--hideme-->
  
  
- <br><br>
  <hr>
- <br>
+
  
 <div class="hideme"> 
 
-<div class="content">
+<div class="content" id="videoita">
 
 <h2>Videot</h2>
 
@@ -286,53 +317,44 @@ taustoiksi.
  
 <div class="row">
 
-Tässä videoita joita olen editoinut Premiere Prolla, lisännyt efektejä After Effectsillä ja pääosin kuvannut itse.
+Tässä videoita ja kuvankäsittelyä joita olen tehnyt Adoben ohjelmilla.
 
 
 <br><br>
 
-   <div class="col-sm-4 text-center" >
-	 
-	 <a href="bulgaria.html"><img src="galleria/bulgaria.jpg" class="videokuva" alt="bulgaria"></a>
-	 
-	
+   <div class="col-sm-6 text-center" >
+	  
+	 <a href="videot.html"><img src="galleria/bulgaria.jpg" class="videokuva" alt="videoihin"><br>Videoihin</a>
+	 <br>
 	</div>
    
-   <div class="col-sm-4 text-center" >
+   <div class="col-sm-6 text-center" >
 	 
-	 <a href="tekstianimaatio.html"><img src="galleria/sites.jpg" class="videokuva" alt="tekstianimaatio"></a>
-	
-   </div>
-	
-   
-   <div class="col-sm-4 text-center" >
+	 <a href="kuvankasittely.html"><img src="galleria/cupabove.jpg" class="videokuva" alt="kuvankäsittelyyn"><br>Kuvankäsittelyyn</a>
 	 
-	 <a href="dik.video.html"><img src="galleria/videok.jpg" class="videokuva" alt="videonkäsittely"></a>
+   </div>
 	
-   </div>
-   
-   </div>
+  
 </div><!--row-->
+
+ <a href="#top" id="up" alt="alkuun">&#9650;</a>
+<br>
 </div><!--content-->
    
    
  </div> <!--hideme--> 
  
- <br><br>
+
  <hr>
- <br>
+
  
 <div class="hideme2">
 
-<div class="content">
+<div class="content" id="audio">
 
 <h2>Digitaalisen äänenkäsittelyn perusteet</h2>
 
-
 <br>
-
-
-
 
 Alla aikoinaan opinnoissa tehty äänenkäseittelyn harjoitustyö. eri tehtävänantoineen. Harjoitustyössä oli neljä osaa jotka ovat
 kuultavissa alapuolella. Tehtävänannot eivät ole viralliset alkuperäiset mutta niitä on mukailtu niin hyvin kuin ne muistuivat mieleen.
@@ -344,6 +366,13 @@ kuultavissa alapuolella. Tehtävänannot eivät ole viralliset alkuperäiset mut
 </div>
 
 <br>
+
+</div><!--content-->
+</div><!--hideme2-->
+<div class="hideme3">
+
+<div class="content">
+
 <b>1. Koeta saada ääninäytteestä järkevän kuuloinen eri tekniikoita yhdistelemällä.</b><br>
 <br>
 
@@ -354,6 +383,8 @@ Sitten otin hieman kohinaa 5.stä sanasta ja sen näytteeksi Capture noice reduc
 Sanoja kuunnellessa huomasin, että osa oli käännetty, joten käytin Reverse-efektiä sanoihin 2,3,5 ja 7. Vaihdoin vielä 2sen ja 3sen paikkaa, jolloin lause alkoi olla järkevä.
 Tiivistin välit manuaalisesti.<br><br>
 
+
+
 <audio controls>
  <source src="aanet/Osa 1.wav" type="audio/wav">
   <source src="aanet/Osa 1.mp3" type="audio/mp3">
@@ -363,11 +394,8 @@ Your browser does not support the audio element.
 
 
 Tulokseksi tuli: Ihminen syttyy ja sammuu kuin valo yössä.<br>
-</div><!--content-->
-</div><!--hideme2-->
-<div class="hideme3">
 
-<div class="content">
+
 
 <br><br>
 <b>2. Etsi jokin huonokuntoinen äänitallenne. Poimi siitä 10–30 sekuntia pitkä ääninäyte. Koeta vaimentaa sitä häiritsevä taustakohina ja muut epäpuhtaudet. Raportoi käyttämistäsi operaatioista ja palauta ratkaisuna alkuperäinen ja puhdistamasi ääninäyte.</b><br>
@@ -445,11 +473,14 @@ Lopussa vielä ennen rumpujen kaiulla vahvistettua lopputahtia Simpsoneiden Home
 Your browser does not support the audio element.
 </audio>
 
-<br><br>
-
+<br>
+ <a href="#top" id="up" alt="alkuun">&#9650;</a>
+<br>
 </div><!--content-->
 
 </div><!--hideme3-->
+
+
  <br><br>
  
 
