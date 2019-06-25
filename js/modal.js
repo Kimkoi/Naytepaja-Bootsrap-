@@ -1,5 +1,5 @@
 
-function modeliin(kuvanId){
+function modaliin(kuvanId){
 	
 	// Get the modal
 var modal = document.getElementById('myModal');
