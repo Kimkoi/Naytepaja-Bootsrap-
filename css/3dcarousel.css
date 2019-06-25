@@ -96,8 +96,8 @@
 
 .next, .prev {
 display: inline-block;
-font-size:150px;
-color: #444;
+font-size:120px;
+color: #666666;
 cursor: pointer;
 transition-duration: 0.4s;
 }
@@ -108,3 +108,4 @@ transition-duration: 0.4s;
 
 .next { right: 5em; }
 .prev { left: 5em; }
+
