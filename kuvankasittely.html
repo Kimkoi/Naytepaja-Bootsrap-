@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Näytepaja</title>
+
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqtoiminnot.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body background="galleria/background-forest.jpg">
+  
+   <nav class="navbar navbar-default">
+    <div class="navbar-header">
+		
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#minimenu-toggle-nav" aria-expanded="false">
+		
+		<span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+			
+        </button>
+		<a class="navbar-brand" href="index.html">Kimmon näytepaja</a>
+		
+    </div>
+		
+			<div class="collapse navbar-collapse" id="minimenu-toggle-nav">
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html">Portfolio</a></li>
+			<li><a href="cv.html">CV</a></li>
+			
+			</ul>
+			</div>
+			
+		
+   </nav><!-- nav collapse-->
+   
+  <div class="content">
+<div class="text-center">
+
+
+<h2>Kuvankäsittely</h2>
+<br><br>
+
+Tässä kuvankäsittelyä erään oman sivuprojektin designin osalta. Tarkoitus oli muokata Pexel.comista saatuja kuvia että ne sopivat mainostamaan omaa designia.
+ 
+
+</div>
+<br><br>
+
+<div class="row">
+   <div class="col-sm-6 text-center" >
+	 
+	<a><img src="galleria/cuporig.jpg" id="cuporig" height="270" width="400" class="VertCenter" onclick="modaliin('cuporig')" alt="alkuperäinen kuva"/></a>
+	<br>Alkuperäinen kuva 
+	
+	</div>
+	
+   
+   <div class="col-sm-6 text-center" >
+	 
+	 <a><img src="galleria/omadesign.jpg" id="omadesign" height="320" width="400" onclick="modaliin('omadesign')" alt="muokattu kuva "/></a>
+	 <br>Muokattu kuva 
+   </div>
+   </div>
+   <br><br>
+   <div class="text-center">
+   Latasin Photoshopilla tehdyn Big Lebowski- designin Printify- printtipalveluun, jolloin se tuotti automaattisesti mockup- kuvia tulevasta mukista
+   eri kulmista.
+   <br><br>
+  <a><img src="galleria/opinioncup.jpg" id="opinioncup" width="400" height="350" onclick="modaliin('opinioncup')" alt="alk. mukikuva" ><br></a>
+Printify:n mockup kuva
+<br><br>
+   
+   
+   Kaikki kuvat ovat kuitenkin valkoisella pohjalla joten halusin pari mielenkiintoisempaa kuvaa joukkoon. Näille uusille kuville toimisi pohjana
+   Pexel.comista lataamani vapaaseen käyttöön tarkoitetut kuvat. Alempana olevaan alkuperäiseen kuvaan halusin naisen pitelemään sunnittelemaani mukia.
+ <br><br>
+ <ul>
+ <li>Lisäsin Photoshopissa alkuperäisen kuvan päälle kerroksen, jossa oli kuva uudesta mukista. Uutta kuvaa oli hämärrettävä koska valo tulee 
+ alkuperäisessä kuvassa takaa. Rajasin ja likistin vielä alkuperäistä kuvaa hieman horisontaalisesti, koska uusi korkeampi muki istuisi kuvaan silloin paremmin.</li>
+ <br>
+ <li>Uusi muki oli kuitenkin kontrastiltaan liian suuri alkuperäiseen kuvaan joten lisäsin myös omaan kerrokseen filmiraetta pienellä läpinäkyvyysprosentilla.
+ Tämä toi mukikerroksen pinnan päälliseen kohtaan sopivasti samanlaista rakeisuutta kuin muuallakin kuvassa on. </li>
+ <br>
+ <li>Mukia pitelevän käden lisäsin omalle kerrokselleen mukikerroksen päälle peittämään kahvan. Mukikerrokseen lisäsin kahvaan myös varjoja niihin kohtiin, joihin sormien voidaan ajatella niitä
+ tekevän. </li>
+  </ul>
+ <br><br>
+ 
+<div class="row">
+   <div class="col-sm-6 text-center" > 
+	 
+	<a><img src="galleria/cuporig.jpg" id="cuporig" height="270" width="400" class="VertCenter" onclick="modaliin('cuporig')" alt="alkuperäinen kuva"/></a>
+	<br>Alkuperäinen kuva 
+	
+	</div>
+	
+   
+   <div class="col-sm-6 text-center" >
+	 
+	 <a><img src="galleria/omadesign.jpg" id="omadesign" height="320" width="400" onclick="modaliin('omadesign')" alt="muokattu kuva "/></a>
+	 <br>Muokattu kuva 
+   </div>
+   </div>
+   
+  
+  <br><br>
+  Lisäksi halusin kuvan jossa muki olisi käytössä ruokapöydässä. 
+  <br><br>
+  <ul>
+  <li>Alempana olevaan alkuperäiseen kuvaan lisäsin omaan kerrokseen kuvan mukista 
+  ylhäältä päin. Rajasin alkuperäisestä kuvasta reunoja pois jotta muki löytyisi kuvasta helpommin. Muokkasin myös mukin kahvaa, koska se näytti 
+  alkuperäisessä kuvassa hieman oudolta. </li>
+  <br>
+  <li>Kupin alle jäävä alkuperäinen astia ei kuitenkaan langettanut tarpeeksi varjoa, joten tein alkuperäisen ja mukin väliseen kerrokseen mukin
+  varjon värittäen sen Gradient- työkalulla.</li> 
+  <br>
+  <li>Tässäkin kuvassa lisäsin myös omaan kerrokseen kupin päälle 
+  filmiraetta pienellä läpinäkyvyysprosentilla jotta se istuisi muuhun kuvaan paremmin. </li>
+  </ul>
+  <br><br> 
+  <div class="row">
+   <div class="col-sm-6 text-center" > 
+	 
+	<img src="galleria/aamiainen.jpg" id="aamiainen" height="270" width="400" margin-top="10px" onclick="modaliin('aamiainen')" alt="alkuperäinen kuva">
+	<br>Alkuperäinen kuva 
+	
+	</div>
+	
+   
+   <div class="col-sm-6 text-center" >
+	 
+	 <img src="galleria/cupabove.jpg" id="cupabove" height="320" width="400"class="VertCenter" onclick="modaliin('cupabove')" alt="muokattu kuva ">
+	 <br>Muokattu kuva 
+   </div>
+   </div>
+   <br><br> 
+   
+    <!-- Ponnahdusmodali -->
+<div id="myModal" class="modal">
+  
+  <span class="close">&times;</span>
+
+  
+  <img class="modal-content" id="imgInModal">
+  
+</div><!-- Ponnahdusmodali -->
+
+  </div><!--content-->
+  
+   
+   
+   
+   <div class="navbar-footer navbar-fixed-bottom" role="navigation" >
+   <div class="container">
+   <table style="width:100%">
+    <tr>
+	<th class="navbar-text pull left">
+		<p>Esittelysivu</p>
+	</th>
+	<th>
+	<span class="links" style="float:right;">
+	<a href="index.html">Portfolio</a>
+	<a href="cv.html">CV</a>
+   </span>
+   </div>
+  </div>
+  
+  </body>
+</html>
